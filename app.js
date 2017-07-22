@@ -19,7 +19,7 @@ app.on("ready", function() {
   });
   mainWindow.setPosition(0, 0);
   mainWindow.loadURL("file://" + __dirname + "/index.html");
-  
+
   mainWindow.on("closed", function() {
     mainWindow = null;
   });
