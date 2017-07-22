@@ -4,6 +4,8 @@ var BrowserWindow = electron.BrowserWindow;
 
 var mainWindow = null;
 
+app.dock.hide();
+
 app.on("window-all-closed", function() {
   if (process.platform !== "darwin") app.quit();
 });
